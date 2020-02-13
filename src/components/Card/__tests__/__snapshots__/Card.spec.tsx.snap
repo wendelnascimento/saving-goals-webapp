@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Should math stored snapshot 1`] = `
+.c0 {
+  padding: 32px;
+  border-radius: 4px;
+}
+
+<Card>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <h1>
+        Test
+      </h1>
+    </div>
+  </styled.div>
+</Card>
+`;
+
+exports[`<Card /> Should math stored snapshot 2`] = `
+.c0 {
+  padding: 32px;
+  border-radius: 4px;
+}
+
+<Card>
+  <styled.div>
+    <div
+      className="c0"
+    />
+  </styled.div>
+</Card>
+`;
