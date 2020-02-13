@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> Should match stored snapshot 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c4 {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.c3 {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<Input
+  addonBefore="$"
+  label="Test label"
+  onChange={[MockFunction]}
+  value=""
+>
+  <styled.fieldset>
+    <fieldset
+      className="c0"
+    >
+      <styled.legend>
+        <legend
+          className="c1"
+        >
+          Test label
+        </legend>
+      </styled.legend>
+      <styled.div>
+        <div
+          className="c2"
+        >
+          <styled.div>
+            <div
+              className="c3"
+            >
+              $
+            </div>
+          </styled.div>
+          <styled.input
+            onChange={[MockFunction]}
+            value=""
+          >
+            <input
+              className="c4"
+              onChange={[MockFunction]}
+              value=""
+            />
+          </styled.input>
+        </div>
+      </styled.div>
+    </fieldset>
+  </styled.fieldset>
+</Input>
+`;
