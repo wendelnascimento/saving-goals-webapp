@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo /> Should math stored snapshot 1`] = `
+.c0 {
+  width: 100px;
+}
+
+<Logo>
+  <styled.img
+    src="test-file-stub"
+  >
+    <img
+      className="c0"
+      src="test-file-stub"
+    />
+  </styled.img>
+</Logo>
+`;
