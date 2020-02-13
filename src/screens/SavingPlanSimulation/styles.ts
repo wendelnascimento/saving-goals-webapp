@@ -25,6 +25,7 @@ export const Subtitle = styled.h2`
 `;
 
 export const InputRow = styled.div`
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,5 +40,33 @@ export const InputWrapper = styled.div`
 
   &:last-child {
     margin-left: 8px;
+  }
+`;
+
+export const SummaryContainer = styled.div`
+  margin: 24px 0;
+`;
+
+export const SubmitButton = styled.button`
+  display: block;
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  padding: 16px;
+  border: none;
+  background: ${({ theme }) => theme.blue};
+  color: ${({ theme }) => theme.white};
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 1000px;
+
+  &:hover {
+    background: ${({ theme }) => theme.lightBlue};
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    background: ${({ theme }) => theme.lightBlue};
   }
 `;

@@ -4,6 +4,7 @@ import dayjs from 'dayjs';
 import Card from '../../components/Card';
 import Input from '../../components/Input';
 import DateInput from '../../components/DateInput';
+import Summary from '../../components/Summary';
 
 import {
   Wrapper,
@@ -12,6 +13,8 @@ import {
   Subtitle,
   InputRow,
   InputWrapper,
+  SummaryContainer,
+  SubmitButton,
 } from './styles';
 
 import academySvg from '../../icons/academy.svg';
@@ -21,6 +24,26 @@ const SavingPlanSimulation = () => {
   const [selectedDate, setSelectedDate] = useState(dayjs());
 
   const originalDate = useMemo(() => dayjs(), []);
+  const monthlyValue = useMemo(() => {
+    const parsedValue = parseInt(value.replace(/\D/g, ''), 10) / 100;
+    if (selectedDate && value) {
+      const months = selectedDate.diff(originalDate, 'month');
+      if (months > 0) {
+        return Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+        }).format(Math.ceil(parsedValue / months));
+      }
+    }
+    return Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    }).format(Math.ceil(parsedValue || 0));
+  }, [originalDate, selectedDate, value]);
+  const monthsDiff = useMemo(() => selectedDate.diff(originalDate, 'month'), [
+    selectedDate,
+    originalDate,
+  ]);
 
   const handleValueChange = (
     event: React.ChangeEvent<HTMLInputElement>,
@@ -47,7 +70,7 @@ const SavingPlanSimulation = () => {
   };
 
   const handlePreviousMonth = () => {
-    if (selectedDate.subtract(1, 'month').isAfter(dayjs())) {
+    if (selectedDate.subtract(1, 'month').isAfter(originalDate)) {
       setSelectedDate(selectedDate.subtract(1, 'month'));
     } else {
       setSelectedDate(originalDate);
@@ -77,6 +100,15 @@ const SavingPlanSimulation = () => {
             />
           </InputWrapper>
         </InputRow>
+        <SummaryContainer>
+          <Summary
+            monthlyValue={monthlyValue}
+            monthsDiff={monthsDiff}
+            value={value}
+            selectedDate={selectedDate}
+          />
+        </SummaryContainer>
+        <SubmitButton>Finish</SubmitButton>
       </Card>
     </Wrapper>
   );
