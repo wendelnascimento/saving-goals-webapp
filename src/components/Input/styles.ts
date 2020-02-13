@@ -32,6 +32,7 @@ export const Field = styled.input`
   font-weight: 700;
   font-size: 1.5rem;
   width: 100%;
+  margin: 0;
 `;
 
 export const AddonInput = styled.div`

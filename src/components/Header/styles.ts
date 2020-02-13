@@ -25,6 +25,8 @@ export const BackButton = styled.button`
   display: none;
 
   @media screen and (max-width: 550px) {
+    background: ${({ theme }) => theme.white};
+    border: none;
     display: block;
     margin-right: auto;
     display: block;

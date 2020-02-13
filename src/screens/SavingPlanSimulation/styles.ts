@@ -51,7 +51,7 @@ export const InputWrapper = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    flex: 0 1 100%;
+    flex: 0;
     width: 100%;
 
     &:first-child {
@@ -98,7 +98,7 @@ export const BackRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin: 16px 0;
   position: relative;
 `;
 

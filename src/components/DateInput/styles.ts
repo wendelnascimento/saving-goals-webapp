@@ -20,6 +20,7 @@ export const InputBox = styled.div`
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
+  width: 100%;
 `;
 
 export const Field = styled.div`
@@ -56,6 +57,7 @@ export const AddonLeft = styled.button`
   border-bottom-right-radius: 0;
   border-right: none;
   transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 0;
 
   &:hover {
     cursor: pointer;
