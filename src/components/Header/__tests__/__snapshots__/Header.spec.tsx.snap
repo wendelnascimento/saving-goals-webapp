@@ -47,6 +47,7 @@ exports[`<Header /> Should math stored snapshot 1`] = `
 
 @media screen and (max-width:550px) {
   .c1 {
+    border: none;
     display: block;
     margin-right: auto;
     display: block;

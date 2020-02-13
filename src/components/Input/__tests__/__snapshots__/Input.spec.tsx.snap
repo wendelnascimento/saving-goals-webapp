@@ -48,6 +48,8 @@ exports[`<Input /> Should match stored snapshot 1`] = `
   font-weight: 700;
   font-size: 1.5rem;
   width: 100%;
+  margin: 0;
+  -webkit-appearance: none;
 }
 
 .c3 {

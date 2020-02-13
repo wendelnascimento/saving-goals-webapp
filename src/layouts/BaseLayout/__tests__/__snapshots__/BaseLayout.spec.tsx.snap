@@ -63,6 +63,7 @@ exports[`<BaseLayout /> Should math stored snapshot 1`] = `
 
 @media screen and (max-width:550px) {
   .c2 {
+    border: none;
     display: block;
     margin-right: auto;
     display: block;
@@ -180,6 +181,7 @@ exports[`<BaseLayout /> Should math stored snapshot 2`] = `
 
 @media screen and (max-width:550px) {
   .c2 {
+    border: none;
     display: block;
     margin-right: auto;
     display: block;
