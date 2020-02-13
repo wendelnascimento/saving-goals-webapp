@@ -33,6 +33,7 @@ export const Field = styled.input`
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
+  -webkit-appearance: none;
 `;
 
 export const AddonInput = styled.div`
