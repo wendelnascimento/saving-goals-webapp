@@ -4,6 +4,15 @@ exports[`<Card /> Should math stored snapshot 1`] = `
 .c0 {
   padding: 32px;
   border-radius: 4px;
+  border: 1px solid;
+}
+
+@media screen and (max-width:550px) {
+  .c0 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+  }
 }
 
 <Card>
@@ -23,6 +32,15 @@ exports[`<Card /> Should math stored snapshot 2`] = `
 .c0 {
   padding: 32px;
   border-radius: 4px;
+  border: 1px solid;
+}
+
+@media screen and (max-width:550px) {
+  .c0 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+  }
 }
 
 <Card>

@@ -37,3 +37,9 @@ export const SummaryRowGray = styled(SummaryRow)`
 export const SummaryDescription = styled.span`
   font-size: 0.7rem;
 `;
+
+export const OnlyDesktopText = styled.span`
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+`;

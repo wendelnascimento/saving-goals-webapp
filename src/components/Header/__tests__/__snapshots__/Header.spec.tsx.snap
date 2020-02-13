@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> Should math stored snapshot 1`] = `
-.c1 {
+.c4 {
   width: 100px;
 }
 
@@ -24,17 +24,63 @@ exports[`<Header /> Should math stored snapshot 1`] = `
   border-bottom: 1px solid;
 }
 
+.c1 {
+  display: none;
+}
+
+.c2 {
+  width: 6px;
+}
+
+@media screen and (max-width:550px) {
+  .c0 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .c0 > .c3 {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .c1 {
+    display: block;
+    margin-right: auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+}
+
 <Header>
   <styled.header>
     <header
       className="c0"
     >
+      <styled.button>
+        <button
+          className="c1"
+        >
+          <styled.img
+            src="test-file-stub"
+          >
+            <img
+              className="c2"
+              src="test-file-stub"
+            />
+          </styled.img>
+        </button>
+      </styled.button>
       <Logo>
         <styled.img
           src="test-file-stub"
         >
           <img
-            className="c1"
+            className="c3 c4"
             src="test-file-stub"
           />
         </styled.img>

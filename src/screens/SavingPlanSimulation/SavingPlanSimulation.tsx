@@ -15,9 +15,14 @@ import {
   InputWrapper,
   SummaryContainer,
   SubmitButton,
+  BackRow,
+  BackButton,
+  ButtonImage,
+  BackText,
 } from './styles';
 
 import academySvg from '../../icons/academy.svg';
+import arrowSvg from '../../icons/arrow.svg';
 
 const SavingPlanSimulation = () => {
   const [value, setValue] = useState('');
@@ -79,6 +84,14 @@ const SavingPlanSimulation = () => {
 
   return (
     <Wrapper>
+      <BackRow>
+        <BackButton>
+          <ButtonImage src={arrowSvg} />
+        </BackButton>
+        <BackText>
+          Let&apos;s plan your <strong>saving goal</strong>
+        </BackText>
+      </BackRow>
       <Card>
         <SavingIcon src={academySvg} />
         <Title>Go to College</Title>

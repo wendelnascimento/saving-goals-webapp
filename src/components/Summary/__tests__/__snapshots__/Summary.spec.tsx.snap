@@ -43,13 +43,13 @@ exports[`<Summary /> Should math stored snapshot 1`] = `
   font-weight: 500;
 }
 
-.c3 {
+.c4 {
   display: block;
   font-size: 2rem;
   font-weight: 500;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,8 +65,14 @@ exports[`<Summary /> Should math stored snapshot 1`] = `
   padding: 16px;
 }
 
-.c5 {
+.c6 {
   font-size: 0.7rem;
+}
+
+@media screen and (max-width:550px) {
+  .c3 {
+    display: none;
+  }
 }
 
 <Summary
@@ -87,12 +93,19 @@ exports[`<Summary /> Should math stored snapshot 1`] = `
             <span
               className="c2"
             >
-              Monthly amount
+              Monthly
+              <styled.span>
+                <span
+                  className="c3"
+                >
+                   amount
+                </span>
+              </styled.span>
             </span>
           </styled.span>
           <styled.span>
             <span
-              className="c3"
+              className="c4"
             >
               $521
             </span>
@@ -101,11 +114,11 @@ exports[`<Summary /> Should math stored snapshot 1`] = `
       </styled.div>
       <Styled(styled.div)>
         <div
-          className="c4"
+          className="c5"
         >
           <styled.span>
             <span
-              className="c5"
+              className="c6"
             >
               You're planning
                

@@ -9,12 +9,15 @@ import {
   SummaryValue,
   SummaryRowGray,
   SummaryDescription,
+  OnlyDesktopText,
 } from './styles';
 
 const Summary = (props: Props) => (
   <Container>
     <SummaryRow>
-      <SummaryTitle>Monthly amount</SummaryTitle>
+      <SummaryTitle>
+        Monthly<OnlyDesktopText> amount</OnlyDesktopText>
+      </SummaryTitle>
       <SummaryValue>{props.monthlyValue}</SummaryValue>
     </SummaryRow>
     <SummaryRowGray>
