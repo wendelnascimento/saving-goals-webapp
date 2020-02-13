@@ -23,3 +23,21 @@ export const Subtitle = styled.h2`
   color: ${({ theme }) => theme.gray};
   margin-top: 0;
 `;
+
+export const InputRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const InputWrapper = styled.div`
+  flex: 0 1 50%;
+
+  &:first-child {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin-left: 8px;
+  }
+`;
