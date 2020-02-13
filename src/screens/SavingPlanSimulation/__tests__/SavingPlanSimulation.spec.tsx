@@ -36,6 +36,20 @@ describe('<SavingPlanSimulation />', () => {
     expect(wrapper.find('Input').prop('value')).toBe('1.00');
   });
 
+  it('Should reset value to empty if you type delete the value after having one', () => {
+    const wrapper = mount(<SavingPlanSimulation />);
+
+    wrapper
+      .find('Input input')
+      .simulate('change', { target: { value: '100' } });
+
+    expect(wrapper.find('Input').prop('value')).toBe('1.00');
+
+    wrapper.find('Input input').simulate('change', { target: { value: '' } });
+
+    expect(wrapper.find('Input').prop('value')).toBe('');
+  });
+
   it('Should change to next month accordingly', () => {
     const wrapper = mount(<SavingPlanSimulation />);
 
